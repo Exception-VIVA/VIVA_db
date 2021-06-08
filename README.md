@@ -5,7 +5,7 @@
 
 실제 제공되는 문제집이나 문제지에서는 문제별로 이미지를 나누어 제공하지 않기 때문에 이를 생성해내야한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fad264d3-6902-4d8d-8fc3-d504727d1e1f/_2021-06-08__1.02.00.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fad264d3-6902-4d8d-8fc3-d504727d1e1f/_2021-06-08__1.02.00.png)
+![image](https://user-images.githubusercontent.com/52443701/121131499-dd4f9180-c86a-11eb-8dce-274c21ffad28.png)
 
 문제 및 답안 이미지 사용 예시(오답노트)
 
@@ -21,7 +21,8 @@
 
 ## 문제지 영역 자르기
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c6bf12c1-11f1-44dd-a01e-b392e7a7ef32/_2021-06-08__2.45.35.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c6bf12c1-11f1-44dd-a01e-b392e7a7ef32/_2021-06-08__2.45.35.png)
+![image](https://user-images.githubusercontent.com/52443701/121131665-12f47a80-c86b-11eb-88ef-be0c91e1ea0b.png)
+
 
 ```python
 
@@ -70,7 +71,7 @@ def cropCenter(img):
 
 ### contours()
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/359f7963-a12c-4846-bf5f-13882f4db0ce/R1280x0-5.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/359f7963-a12c-4846-bf5f-13882f4db0ce/R1280x0-5.png)
+![image](https://user-images.githubusercontent.com/52443701/121131715-26074a80-c86b-11eb-9f28-5173452bfd34.png)
 
 ```python
 def contour(page_rl):
@@ -120,15 +121,15 @@ def contour(page_rl):
 
 ### Input
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b6c87faf-2a18-4792-99ac-21cb640a9105/R1280x0-11.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b6c87faf-2a18-4792-99ac-21cb640a9105/R1280x0-11.png)
-
+![image](https://user-images.githubusercontent.com/52443701/121131773-36b7c080-c86b-11eb-9158-7bd3db3a6361.png)
 입력 이미지의 예시 
 
 ### 탬플릿 매칭
 
 답지 이미지 내에서 답을 표기하는 맨 하단을 기준으로 이미지를 자른다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6b40547b-2453-425c-bdd6-e6b1afb1ddad/_2021-06-08__2.35.05.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6b40547b-2453-425c-bdd6-e6b1afb1ddad/_2021-06-08__2.35.05.png)
+![image](https://user-images.githubusercontent.com/52443701/121131815-46cfa000-c86b-11eb-9c13-c86f0f4aaab5.png)
+
 
 해당 이미지를 이용하여, 기준을 잡고 나눈다
 
@@ -147,7 +148,8 @@ loc = np.where(res >= threshold)
 
 ### template matching시각화
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f899621-c03e-4108-9d18-126c963f7b8c/R1280x0-10.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f899621-c03e-4108-9d18-126c963f7b8c/R1280x0-10.png)
+![image](https://user-images.githubusercontent.com/52443701/121131859-564ee900-c86b-11eb-9b2a-68e1576b6eeb.png)
+
 
 ### flag를 이용하여 이미지 합치기
 
@@ -191,7 +193,6 @@ loc = np.where(res >= threshold)
 ```
 
 ### Output
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63929b13-726f-4225-9445-e523ddff8376/R1280x0-9.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63929b13-726f-4225-9445-e523ddff8376/R1280x0-9.png)
+![image](https://user-images.githubusercontent.com/52443701/121131910-6a92e600-c86b-11eb-8018-a94f634bf29d.png)
 
 flag 까지 완료된 output의 예시

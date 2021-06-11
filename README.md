@@ -198,6 +198,5 @@ loc = np.where(res >= threshold)
 flag 까지 완료된 output의 예시
 
 
-
-##관련 기술블로그 
+## 관려 기술 블로그
 https://iagreebut.tistory.com/category/졸업프로젝트/OpenCV

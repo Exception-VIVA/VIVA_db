@@ -196,3 +196,8 @@ loc = np.where(res >= threshold)
 ![image](https://user-images.githubusercontent.com/52443701/121131910-6a92e600-c86b-11eb-8018-a94f634bf29d.png)
 
 flag 까지 완료된 output의 예시
+
+
+
+##관련 기술블로그 
+https://iagreebut.tistory.com/category/졸업프로젝트/OpenCV

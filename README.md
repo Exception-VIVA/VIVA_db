@@ -1,4 +1,6 @@
 # VIVA_db
+
+
 ## 목적
 
 : 앱 내 "개인맞춤형 모의고사 추천 서비스" 및 "채점 결과 연동 오답노트 생성"서비스를 위해서는 문제와 그에 해당하는 답안지 이미지를 DB에 보유하고 있어야함.
@@ -9,15 +11,21 @@
 
 문제 및 답안 이미지 사용 예시(오답노트)
 
+
+
 ## 적용데이터 목록
 
 저작권에 문제가 없는 EBS, 모의고사로 진행함
+
+
 
 ### 문제지/답안지
 
 - [ ]  수능완성 (가/나) 2021 - 2017년
 - [ ]  평가원 모의고사 (가/나) 2021 - 2017년 (6/9/수능)
 - [ ]  교육청 모의고사 (가/나) 2021 - 2019년 (3/4/7/10월)
+
+
 
 ## 문제지 영역 자르기
 
@@ -69,6 +77,8 @@ def cropCenter(img):
     contour(right)
 ```
 
+
+
 ### contours()
 
 ![image](https://user-images.githubusercontent.com/52443701/121131715-26074a80-c86b-11eb-9f28-5173452bfd34.png)
@@ -117,7 +127,12 @@ def contour(page_rl):
 
 ```
 
+
+
+
 ## 답안지 데이터 생성
+
+
 
 ### Input
 
@@ -146,9 +161,13 @@ loc = np.where(res >= threshold)
 
 다음과 같이 답이미지가 존재하는 곳을 찾아내어 위치값을 받아와 그를 기준으로 잘라낸다
 
+
+
 ### template matching시각화
 
 ![image](https://user-images.githubusercontent.com/52443701/121131859-564ee900-c86b-11eb-9b2a-68e1576b6eeb.png)
+
+
 
 
 ### flag를 이용하여 이미지 합치기
@@ -196,6 +215,8 @@ loc = np.where(res >= threshold)
 ![image](https://user-images.githubusercontent.com/52443701/121131910-6a92e600-c86b-11eb-8018-a94f634bf29d.png)
 
 flag 까지 완료된 output의 예시
+
+
 
 
 ## 관련 기술 블로그
